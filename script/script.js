@@ -13,13 +13,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
         const ender = end.value;
         const frequency = freq.value;
         const finalAmount = parseFloat(Output.value); 
-        if (start.value === "") {
-            const today = new Date();
-            const year = today.getFullYear();
-            const month = String(today.getMonth() + 1).padStart(2, '0');
-            const day = String(today.getDate()).padStart(2, '0');
-            start.value = `${year}-${month}-${day}`;
-        }
         if(freq){
             let count_Empty = 0; 
             if(Interest.value === "") count_Empty++; 
@@ -30,6 +23,13 @@ document.addEventListener('DOMContentLoaded', (event) => {
                 alert("At most only one field can be Empty!!"); 
             }
             else{
+                if (start.value === "") {
+                    const today = new Date();
+                    const year = today.getFullYear();
+                    const month = String(today.getMonth() + 1).padStart(2, '0');
+                    const day = String(today.getDate()).padStart(2, '0');
+                    start.value = `${year}-${month}-${day}`;
+                }
                 if (Principal.value === "") {
                     Principal.value = calculatePrincipal(finalAmount, rate, starter, ender, frequency).toFixed(2);
                 } 

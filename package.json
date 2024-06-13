@@ -1,19 +1,23 @@
 {
   "name": "compcalc",
   "version": "1.0.0",
-  "description": "First commit",
+  "description": "Calculator web app",
   "main": "server.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Zyphon12342/Comp-Calc.git"
   },
-  "author": "",
+  "author": "Your Name",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Zyphon12342/Comp-Calc/issues"
   },
-  "homepage": "https://github.com/Zyphon12342/Comp-Calc#readme"
+  "homepage": "https://github.com/Zyphon12342/Comp-Calc#readme",
+  "dependencies": {
+    "express": "^4.17.3"
+  }
 }
