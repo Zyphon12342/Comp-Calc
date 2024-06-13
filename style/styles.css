@@ -5,18 +5,26 @@ body{
     align-items: center;
     justify-content: center;
 }
+html{
+    background-color: antiquewhite;
+}
 #Layout {
     display: flex;
     flex-direction: column;
     gap: 20px; 
     align-items: center;
-    justify-content: center;
     padding: 20px; 
     box-sizing: border-box; 
     border: 1px solid black; 
-    height: 400px; 
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 300px; 
-    justify-content: space-between;
+}
+
+#Time, #Principal, #freq, #Interest,#Output{
+    display: flex;
+    flex-direction: column;
 }
 
 
