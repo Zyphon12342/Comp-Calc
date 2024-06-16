@@ -19,5 +19,8 @@
   "homepage": "https://github.com/Zyphon12342/Comp-Calc#readme",
   "dependencies": {
     "express": "^4.17.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.3"
   }
 }
